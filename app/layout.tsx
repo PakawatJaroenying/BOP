@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Prompt } from "next/font/google"; // นำเข้า Prompt font
 import Navbar from "../components/modules/Navbar";
 import { LanguageProvider } from "@/context/LanguageProvider";
-import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "@/components/modules/Footer";
 
 // กำหนดการตั้งค่า ฟอนต์ Prompt
 const prompt = Prompt({
@@ -37,14 +37,12 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className={prompt.className}>
-				{" "}
-				{/* ใช้ฟอนต์ Prompt */}
-				<ChakraProvider value={}>
-					<LanguageProvider>
-						<Navbar />
-						{children}
-					</LanguageProvider>
-				</ChakraProvider>
+				<LanguageProvider>
+					<Navbar />
+					{children}
+					{/* Footer */}
+					<Footer/>
+				</LanguageProvider>
 			</body>
 		</html>
 	);

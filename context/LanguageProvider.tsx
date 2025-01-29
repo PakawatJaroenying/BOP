@@ -7,7 +7,7 @@ import React, {
 } from "react";
 
 interface LanguageContextType {
-	language: string;
+	language: Language;
 	switchLanguage: () => void;
 }
 
@@ -48,12 +48,18 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
+	const initialLanguage = typeof window !== "undefined" && localStorage.getItem("language") 
+		? localStorage.getItem("language") as Language 
+		: Language.EN;
+
 	const [state, dispatch] = useReducer(languageReducer, {
-		language: localStorage.getItem("language") ? localStorage.getItem("language") as Language : Language.EN,
+		language: initialLanguage,
 	});
 
 	const switchLanguage = () => {
-        localStorage.setItem("language", state.language === Language.EN ? Language.TH : Language.EN);
+		if (typeof window !== "undefined") {
+			localStorage.setItem("language", state.language === Language.EN ? Language.TH : Language.EN);
+		}
 		dispatch({ type: "SET_LANGUAGE", payload: state.language === Language.EN ? Language.TH : Language.EN });
 	};
 
