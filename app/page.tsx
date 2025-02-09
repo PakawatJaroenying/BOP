@@ -2,7 +2,16 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MapPin, Recycle, Share2, ArrowRight, Calendar } from "lucide-react";
+import {
+	MapPin,
+	Recycle,
+	Share2,
+	ArrowRight,
+	Calendar,
+	RecycleIcon,
+	TurtleIcon,
+	Hourglass,
+} from "lucide-react";
 import { useState } from "react";
 import { dictionary } from "@/lib/dictionary";
 import { useLanguage } from "@/context/LanguageProvider";
@@ -15,6 +24,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import React from "react";
 
 export default function Home() {
 	const [email, setEmail] = useState("");
@@ -45,7 +55,7 @@ export default function Home() {
 					<p className="text-xl md:text-2xl text-gray-300 mt-6 body animate-fadeIn">
 						{t.hero.subtitle}
 					</p>
-					<Button className="mt-6 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 text-lg font-semibold shadow-lg">
+					<Button className="mt-6 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 text-lg font-semibold shadow-lg body">
 						{t.hero.cta} <ArrowRight className="ml-2" />
 					</Button>
 				</div>
@@ -61,19 +71,19 @@ export default function Home() {
 					<div className="grid md:grid-cols-3 gap-8">
 						{[
 							{
-								icon: "/plastic-icon.svg",
+								icon: <RecycleIcon />,
 								value: 8,
 								unit: "M",
 								text: t.impact.stats.plastic,
 							},
 							{
-								icon: "/species-icon.svg",
+								icon: <TurtleIcon />,
 								value: 700,
 								unit: "",
 								text: t.impact.stats.species,
 							},
 							{
-								icon: "/years-icon.svg",
+								icon: <Hourglass />,
 								value: 400,
 								unit: "",
 								text: t.impact.stats.years,
@@ -83,20 +93,23 @@ export default function Home() {
 								key={index}
 								className="p-6 text-center bg-white shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 rounded-xl flex flex-col items-center"
 							>
-								<Image
-									src={item.icon}
-									alt="Impact Icon"
-									width={60}
-									height={60}
-									className="mb-4"
-								/>
-								<div className="text-6xl font-extrabold text-teal-500 flex items-center justify-center headline">
+								{/* Icon Container */}
+								<div className="w-20 h-20 flex items-center justify-center rounded-full bg-teal-100 shadow-md hover:shadow-lg transition-all">
+									{React.cloneElement(item.icon, {
+										className: "h-12 w-12 text-teal-600",
+									})}
+								</div>
+
+								{/* Counter */}
+								<div className="text-6xl font-extrabold text-teal-500 flex items-center justify-center headline mt-4">
 									<Counter
 										end={item.value}
 										duration={2}
 									/>
 									<span className="ml-1 text-4xl">{item.unit}</span>
 								</div>
+
+								{/* Text */}
 								<p className="text-gray-700 mt-3 text-lg text-center">
 									{item.text}
 								</p>

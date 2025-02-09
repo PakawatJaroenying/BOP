@@ -82,11 +82,6 @@
 }
 
 
-/* กำหนดฟอนต์พื้นฐาน */
-.font-body {
-  font-family: 'Helvetica', 'Thonburi', sans-serif;
-}
-
 /* ภาษาอังกฤษ */
 .en .headline {
   font-family: 'Montserrat', sans-serif;
