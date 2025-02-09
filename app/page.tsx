@@ -106,6 +106,7 @@ export default function Home() {
 										end={item.value}
 										duration={2}
 									/>
+									
 									<span className="ml-1 text-4xl">{item.unit}</span>
 								</div>
 
