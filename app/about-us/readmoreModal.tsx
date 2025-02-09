@@ -46,14 +46,14 @@ function Modal({ member, onClose }: ModalProps) {
 							src={member.image}
 							alt={member.name}
 							width={500}
-							height={500}
+							height={300}
 							objectFit="cover"
 							objectPosition="center"
-							className="rounded-lg mx-auto"
+							className="rounded-lg mx-auto w-full "
 						/>
 					</div>
 					<div className="prose max-w-none">
-						<p className="text-gray-600 leading-relaxed">
+						<p className="text-gray-600 leading-relaxed text-justify">
 							{member.description}
 						</p>
 					</div>

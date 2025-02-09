@@ -42,7 +42,7 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`fixed w-full z-50 transition-colors duration-500 ${
+			className={`fixed w-full z-50 transition-colors duration-500 body ${
 				scrolled ? "bg-teal-500" : "bg-transparent"
 			}`}
 		>
@@ -50,7 +50,7 @@ export default function Navbar() {
 				<div className="flex items-center justify-between h-20">
 					<Link
 						href="/"
-						className="flex items-center"
+						className="flex items-center headline"
 					>
 						<Waves
 							className={`h-8 w-8 transition-colors duration-500 ${

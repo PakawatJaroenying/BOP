@@ -26,10 +26,10 @@ function Page() {
 				</div>
 				<div className="relative container mx-auto px-4">
 					<div className="max-w-3xl mx-auto text-center my-20">
-						<h1 className="text-4xl md:text-5xl font-bold">
+						<h1 className="text-4xl md:text-5xl font-bold headline">
 							{language === Language.EN ? "Our Projects" : "โครงการของเรา"}
 						</h1>
-						<p className="text-xl text-blue-100">
+						<p className="text-xl text-blue-100 body">
 							{language === Language.EN
 								? "Innovative solutions for a cleaner ocean and sustainable future"
 								: "นวัตกรรมเพื่อท้องทะเลที่สะอาดและอนาคตที่ยั่งยืน"}
@@ -50,23 +50,27 @@ function Page() {
 								} gap-8 items-center`}
 							>
 								<div className="w-full lg:w-1/2">
-									<div className="relative group overflow-hidden rounded-2xl">
-										<div className="aspect-[4/3] bg-gray-200 overflow-hidden rounded-2xl relative">
-											<Image
-												src={project.image}
-												alt={project.name}
-												fill
-                        className="object-cover"
-											/>
-										</div>
-										<div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+									<div className="relative group overflow-hidden rounded-2xl   gap-1 grid grid-cols-2">
+										{project.images.map((image, i) => (
+											<div
+												key={i}
+												className="relative   h-48 sm:h-64 md:h-80 lg:h-96 overflow-hidden"
+											>
+												<Image
+													src={image}
+													alt={`Project image ${i + 1}`}
+													fill
+													className="object-cover w-full h-full"
+												/>
+											</div>
+										))}
 									</div>
 								</div>
-								<div className="w-full lg:w-1/2 space-y-6">
-									<h2 className="text-3xl font-bold text-gray-900">
+								<div className="w-full lg:w-1/2 space-y-6 self-start">
+									<h2 className="text-3xl font-bold text-gray-900 headline">
 										{project.name}
 									</h2>
-									<div className="prose prose-lg text-gray-600">
+									<div className="prose prose-lg text-gray-600 body text-justify">
 										{project.description.split("\n").map((paragraph, i) => (
 											<p key={i}>{paragraph.trim()}</p>
 										))}
@@ -88,12 +92,12 @@ function Page() {
 			<div className="bg-blue-900/80 text-white py-16">
 				<div className="container mx-auto px-4 text-center">
 					<Waves className="w-12 h-12 mx-auto mb-6 text-blue-400" />
-					<h2 className="text-3xl font-bold mb-4">
+					<h2 className="text-3xl font-bold mb-4 headline">
 						{language === Language.EN
 							? "Join Our Mission"
 							: "ร่วมเป็นส่วนหนึ่งของภารกิจ"}
 					</h2>
-					<p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+					<p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto body">
 						{language === Language.EN
 							? "Together, we can make a difference in protecting our oceans and creating a sustainable future for generations to come."
 							: "ร่วมกันสร้างความเปลี่ยนแปลงในการปกป้องท้องทะเลและสร้างอนาคตที่ยั่งยืนสำหรับคนรุ่นต่อไป"}

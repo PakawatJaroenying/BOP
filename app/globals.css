@@ -80,3 +80,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* กำหนดฟอนต์พื้นฐาน */
+.font-body {
+  font-family: 'Helvetica', 'Thonburi', sans-serif;
+}
+
+/* ภาษาอังกฤษ */
+.en .headline {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.en .body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* ภาษาไทย */
+.th .headline {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.th .body {
+  font-family: 'Thonburi', sans-serif;
+}

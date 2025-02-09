@@ -33,10 +33,10 @@ function AboutUsPage() {
 				</div>
 				<div className="relative container mx-auto px-4">
 					<div className="max-w-3xl mx-auto text-center my-20">
-						<h1 className="text-4xl md:text-5xl font-bold">
+						<h1 className="text-4xl md:text-5xl font-bold headline">
 							{t.about.ourTeam}
 						</h1>
-						<article className="text-xl text-blue-100">
+						<article className="text-xl text-blue-100 body">
 							{t.about.mission}
 						</article>
 					</div>
@@ -48,10 +48,10 @@ function AboutUsPage() {
 				<div className="container mx-auto px-4">
 					<div className="max-w-3xl mx-auto text-center">
 						<Waves className="w-12 h-12 text-blue-600 mx-auto mb-6" />
-						<h2 className="text-3xl font-bold text-gray-900 mb-6">
+						<h2 className="text-3xl font-bold text-gray-900 mb-6 headline">
 							{t.about.ourMission}
 						</h2>
-						<article className="text-lg text-gray-600 text-justify">
+						<article className="text-lg text-gray-600 text-justify body">
 							{t.about.companyHistory}
 						</article>
 					</div>
@@ -67,33 +67,32 @@ function AboutUsPage() {
 								key={index}
 								className="bg-white rounded-lg shadow-lg"
 							>
-								<div className="aspect-w-16 aspect-h-9 bg-gray-200 overflow-hidden">
+								<div className="w-full h-[400px] bg-gray-200 relative overflow-hidden">
 									<Image
-										className="transform hover:scale-105 transition-transform duration-300"
+										className="transform hover:scale-105 transition-transform duration-300 object-cover"
 										src={member.image}
 										alt={member.name}
-										width={500}
-										height={500}
-										layout="responsive"
+										layout="fill"
+										objectFit="cover"
 										quality={100}
 									/>
 								</div>
 								<div className="p-6">
-									<h3 className="text-xl font-bold text-gray-900 mb-1">
+									<h3 className="text-xl font-bold text-gray-900 mb-1 headline">
 										{member.name}
 									</h3>
-									<p className="text-sm text-blue-600 mb-2">
+									<p className="text-sm text-blue-600 mb-2 body">
 										{member.nickname}
 									</p>
-									<p className="text-md font-semibold text-gray-700 mb-4">
+									<p className="text-md font-semibold text-gray-700 mb-4 headline">
 										{member.position}
 									</p>
-									<p className="text-gray-600 text-sm line-clamp-4 mb-4">
+									<p className="text-gray-600 text-sm line-clamp-4 mb-4 body">
 										{member.description}
 									</p>
 									<button
 										onClick={() => setSelectedMember(member)}
-										className="text-blue-600 hover:text-blue-800 text-sm font-semibold flex items-center"
+										className="text-blue-600 hover:text-blue-800 text-sm font-semibold flex items-center body"
 									>
 										Read More
 										<Droplets className="w-4 h-4 ml-1" />

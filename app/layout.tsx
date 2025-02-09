@@ -1,15 +1,50 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Prompt } from "next/font/google"; // นำเข้า Prompt font
 import Navbar from "../components/modules/Navbar";
 import { LanguageProvider } from "@/context/LanguageProvider";
 import Footer from "@/components/modules/Footer";
+import { Montserrat, IBM_Plex_Sans_Thai } from "next/font/google";
+import CustomFont from "next/font/local";
 
-// กำหนดการตั้งค่า ฟอนต์ Prompt
-const prompt = Prompt({
-	subsets: ["latin"],
-	weight: ["400", "500", "600", "700"], // เลือกน้ำหนักของฟอนต์ที่ต้องการ
+const helvetica = CustomFont({
+	src: [
+		{
+			path: "./fonts/helvetica/Helvetica.ttf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "./fonts/helvetica/Helvetica-Bold.ttf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "./fonts/helvetica/Helvetica-Oblique.ttf",
+			weight: "400",
+			style: "italic",
+		},
+		{
+			path: "./fonts/helvetica/Helvetica-BoldOblique.ttf",
+			weight: "700",
+			style: "italic",
+		},
+	],
 	display: "swap",
+});
+const thonburi = CustomFont({
+	src: "./fonts/thonburi/SOV_ThonBuri.ttf",
+	display: "swap",
+});
+const montserrat = Montserrat({
+	subsets: ["latin"],
+	weight: ["300", "400", "700"], // กำหนดหลาย weight
+	style: ["normal", "italic"], // รองรับตัวเอียง
+});
+
+const ibmPlexThai = IBM_Plex_Sans_Thai({
+	subsets: ["thai"],
+	weight: ["100", "300", "400", "700"], // ระบุน้ำหนักที่ใช้
+	style: ["normal"], // ไม่มีตัวเอียงใน IBM Plex Thai
 });
 
 export const metadata: Metadata = {
@@ -36,12 +71,13 @@ export default function RootLayout({
 					content="#ffffff"
 				/>
 			</head>
-			<body className={prompt.className}>
+			<body
+				className={`${montserrat.className} ${ibmPlexThai.className} ${helvetica.className} ${thonburi.className}`}
+			>
 				<LanguageProvider>
 					<Navbar />
 					{children}
-					{/* Footer */}
-					<Footer/>
+					<Footer />
 				</LanguageProvider>
 			</body>
 		</html>

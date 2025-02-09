@@ -1,10 +1,5 @@
-'use client'
-import React, {
-	createContext,
-	useReducer,
-	useContext,
-	ReactNode,
-} from "react";
+"use client";
+import React, { createContext, useReducer, useContext, ReactNode } from "react";
 
 interface LanguageContextType {
 	language: Language;
@@ -24,7 +19,6 @@ interface LanguageAction {
 	type: "SET_LANGUAGE";
 	payload: Language;
 }
-
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
 	undefined
@@ -48,9 +42,10 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-	const initialLanguage = typeof window !== "undefined" && localStorage.getItem("language") 
-		? localStorage.getItem("language") as Language 
-		: Language.EN;
+	const initialLanguage =
+		typeof window !== "undefined" && localStorage.getItem("language")
+			? (localStorage.getItem("language") as Language)
+			: Language.EN;
 
 	const [state, dispatch] = useReducer(languageReducer, {
 		language: initialLanguage,
@@ -58,17 +53,24 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
 	const switchLanguage = () => {
 		if (typeof window !== "undefined") {
-			localStorage.setItem("language", state.language === Language.EN ? Language.TH : Language.EN);
+			localStorage.setItem(
+				"language",
+				state.language === Language.EN ? Language.TH : Language.EN
+			);
 		}
-		dispatch({ type: "SET_LANGUAGE", payload: state.language === Language.EN ? Language.TH : Language.EN });
+		dispatch({
+			type: "SET_LANGUAGE",
+			payload: state.language === Language.EN ? Language.TH : Language.EN,
+		});
 	};
-
 
 	return (
 		<LanguageContext.Provider
 			value={{ language: state.language, switchLanguage }}
 		>
-			{children}
+			<div className={state.language === Language.EN ? "en" : "th"}>
+				{children}
+			</div>
 		</LanguageContext.Provider>
 	);
 };
