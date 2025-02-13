@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-montserrat: "__Montserrat_cd6e3a", sans-serif;
+  --font-ibm-plex-thai: "__IBM_Plex_Sans_Thai_a8e533", sans-serif;
+  --font-helvetica: "__helvetica_20c168", sans-serif;
+  --font-thonburi: "__thonburi_753d32", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,19 +87,19 @@
 
 
 /* ภาษาอังกฤษ */
-.en .headline {
-  font-family: 'Montserrat', sans-serif;
+.en *{
+  font-family: var(--font-montserrat) !important;
 }
 
-.en .body {
-  font-family: 'Helvetica', sans-serif;
-}
+/* .en .body {
+  font-family: var(--font-helvetica) !important;
+} */
 
 /* ภาษาไทย */
-.th .headline {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+.th *{
+  font-family: var(--font-ibm-plex-thai) !important;
 }
 
-.th .body {
-  font-family: 'Thonburi', sans-serif;
-}
+/* .th .body {
+  font-family: var(--font-thonburi) !important;
+} */

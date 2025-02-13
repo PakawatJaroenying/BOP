@@ -1,0 +1,140 @@
+{
+	"nav": {
+		"about": "About",
+		"projects": "Projects",
+		"getInvolved": "Get Involved",
+		"resources": "Resources",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Protect Our Oceans Together",
+		"subtitle": "For a better world, free from marine plastic waste",
+		"cta": "Join Us Now"
+	},
+	"impact": {
+		"title": "Impact of Plastic Waste on Our Oceans",
+		"stats": {
+			"plastic": "Tons of plastic waste dumped into oceans annually",
+			"species": "Marine species affected",
+			"years": "Years for plastic to decompose"
+		}
+	},
+	"map": {
+		"title": "Recycling Points",
+		"description": "Recycling points map is under development"
+	},
+	"tips": {
+		"title": "Ways to Reduce Plastic Use",
+		"list": [
+			{
+				"title": "Use Cloth Bags",
+				"description": "Instead of plastic bags for shopping"
+			},
+			{
+				"title": "Bring Your Own Cup",
+				"description": "Reduce single-use plastic cups"
+			},
+			{
+				"title": "Segregate Waste",
+				"description": "Sort waste for efficient recycling"
+			}
+		]
+	},
+	"volunteer": {
+		"title": "Become a Volunteer",
+		"description": "Be part of protecting our oceans",
+		"emailPlaceholder": "Your email",
+		"register": "Register"
+	},
+	"footer": {
+		"about": {
+			"title": "About Us",
+			"description": "We work to protect marine ecosystems through community engagement"
+		},
+		"quickLinks": {
+			"title": "Quick Links",
+			"projects": "Projects",
+			"volunteer": "Volunteer",
+			"map": "Map"
+		},
+		"contact": "Contact",
+		"share": {
+			"title": "Share",
+			"button": "Share Website"
+		}
+	},
+	"about": {
+		"ourTeam": "Our Team",
+		"ourMission": "Our Mission",
+		"mission": "BOP and Ranong Recycle RRE Koh Samui Team is active in the Thai Gulf area—and now based in Koh Samui.",
+		"companyHistory": "Blue Ocean Plastic Recycling is transforming waste into opportunity. We work hand-in-hand with informal and formal waste collectors, ensuring fair, transparent, and traceable recycling practices. From first- and second-mile waste pickers to community waste banks, we help create ethical supply chains that meet global standards. As Asia, especially in Thailand and SEA, transitions to Extended Producer Responsibility (EPR) schemes and Europe enforces stricter grievance mechanisms for recycled plastics, we help businesses and communities adapt. We don’t just verify recycled plastic—we empower responsible sourcing, collaborating with partners like Tide Ocean to support brands committed to sustainability. Starting as a nonprofit, we have grown into an impact-driven enterprise, strengthening partnerships through grants, research, and innovation. In the UNDP-funded ABIC Program, we work with the tourism sector to design waste management models that benefit corporations, brands, and local communities. Our collaboration with Second Muse explores eco-bricks as a low- value waste solution for Thai Gulf islands, connecting community waste banks to circular economy models. By working together, we create real change. From Waste to Worth—Driven by Human Values.♻🌍"
+	},
+	"project": {
+		"ourProjects": "Our Projects",
+		"innovative": "Innovative solutions for a cleaner ocean and sustainable future",
+		"projects": [
+			{
+				"name": "Plastic Smart Cities by the WWF",
+				"description": "Blue Ocean Plastic Recycling (BOP) is proud to collaborate with Ranong Recycle Social Enterprise (RRE) in enhancing local waste management infrastructure in Surat Thani and Koh Samui. As part of these efforts, BOP and RRE work together to expand the network of community waste banks and improve Material Recovery Facilities (MRFs) to process plastic waste more efficiently. These initiatives contribute to the broader goals of the Plastic Smart Cities initiative by WWF, a global program that supports scalable waste management solutions in urban and coastal areas. While BOP is not a direct partner of WWF, our work with RRE aligns with the initiative’s mission to reduce plastic leakage into nature through innovation, education, and community engagement. Through this collaboration, we also support educational programs focused on plastic reduction in schools, empowering the next generation with knowledge and tools to drive sustainable change.",
+				"images": [
+					"/projects/Project1-PlasticSmart/1.jpg",
+					"/projects/Project1-PlasticSmart/2.jpg",
+					"/projects/Project1-PlasticSmart/3.jpg",
+					"/projects/Project1-PlasticSmart/4.jpg"
+				]
+			},
+			{
+				"name": "EcoTourism Smart Waste",
+				"description": "Blue Ocean Plastic Recycle is proud to partner with UNDP Indonesia to develop a multi-faceted waste management model tailored to the tourism sector in Koh Samui. This innovative approach addresses the often-overlooked role of tourism in driving waste and environmental challenges. Scalable to similar locations, the project introduces a digital platform enabling tourists and businesses to earn rewards for eco-friendly actions. Additionally, it empowers local youth through capacity-building programs, transforming them into leaders in beach cleaning and sustainability efforts, seamlessly connecting all aspects of the initiative.",
+				"images": [
+					"/projects/Project2-UNDP/1.jpg",
+					"/projects/Project2-UNDP/2.jpg",
+					"/projects/Project2-UNDP/3.jpg",
+					"/projects/Project2-UNDP/4.jpg",
+					"/projects/Project2-UNDP/5.jpg",
+					"/projects/Project2-UNDP/6.jpg"
+				]
+			}
+		],
+		"cta": "Join Our Mission",
+		"ctaDescription": "Together, we can make a difference in protecting our oceans and creating a sustainable future for generations to come.",
+		"ctaBtn": "Get Involved"
+	},
+	"teamMembers": [
+		{
+			"name": "Panipol Apichitsakul",
+			"nickname": "Dan",
+			"position": "Project Lead",
+			"description": "Dan currently leads RRE’s and BOP’s projects in Surat Thani and Koh Samui, focusing on the collection and reprocessing of low-value plastic in his hometown of Koh Samui and its surrounding areas. Under his leadership, RRE has scaled up the production of locally made eco-concrete bricks and other recycled, environmentally friendly products, collaborating with local recyclers to promote more sustainable and environmentally conscious island living in the Thai Gulf. \nLooking ahead, Dan aims to incorporate advanced technology, enhance health and safety measures, and strengthen leakage control in waste management across local, operational, and corporate levels in upcoming RRE and BOP projects.",
+			"image": "/Dan.jpg"
+		},
+		{
+			"name": "Sirawan Kuanwinit",
+			"nickname": "Due",
+			"position": "Head of Business Development/Business Administration and Support",
+			"description": "Building on her previous experience as an Audit Assistant Manager at one of Thailand’s Big Four audit firms and her role in managing her family’s retail business, she brings a wealth of expertise to her work. She applies her skills to establish and continually enhance internal controls while overseeing BOP/RRE’s accounting processes and workflow, from inception to completion. Her responsibilities include organizing and supervising administrative tasks, resolving administrative and tax-related issues, and maintaining follow-ups with BOP/RRE’s partners. She plays a pivotal role in ensuring that all financial objectives of the project align with WWF Thailand’s framework and meet the standards of other national and international organizations.\nDriven by a passion for self-improvement, she is currently pursuing online courses in accounting and finance, aiming to apply her newfound knowledge to financial reporting and other corporate needs for BOP/RRE and its partners. A proud Ranong native, she is also a skilled archer and an avid baker.",
+			"image": "/Due.jpg"
+		},
+		{
+			"name": "Thanith Pakdeewanich",
+			"nickname": "Jan",
+			"position": "Senior Field Coordinator (Samui)",
+			"description": "From the start of the project, Jan helps start and foster a strong working relationship between BOP/RRE and the waste management communities of collectors and waste workers in Koh Samui and nearby islands. She has hands-on experience managing the waste bank network; and is able to connect freely and effortlessly with local waste aggregators, with an in-depth knowledge about day-to-day waste collection and transportation operations both at the waste bank and MRF levels. She is also passionate about identifying different types of plastic, educating and encouraging the communities towards better waste segregation.",
+			"image": "/Jan.jpg"
+		},
+		{
+			"name": "Surat Naktap",
+			"nickname": "Oil",
+			"position": "Field Coordinator (Surat Thani)",
+			"description": "With a background in construction management, Oil helps support our field team, especially the work of the field manager in MRF up-skill plans and connecting the communities to the right buyers. Based in Surat Thani, she helps widen the waste bank network of BOP/RRE in her hometown of Surat Thani. Detail-oriented, she is highly involved in data collection tasks for the projects at BOP/RRE. Her work and life motto is: “I can do it—and do it better.” In her free time, she enjoys spending quality time with her family members, which includes more than half a dozen Persian cats.",
+			"image": "/Oil.jpg"
+		},
+		{
+			"name": "Yada Klinsanit (Pooh)",
+			"nickname": "Pooh",
+			"position": "Part-time Education/Training Consultant (RRE and BOP)",
+			"description": "Yada or Pooh has an extensive background in education and is passionate about teaching the young (and the older!) about environmental issues through different approaches ranging from behavior changes to raising awareness about natural conservation and ecotourism. She tirelessly works with students, teachers and educators or trainers at local government-run schools and private sectors in Koh Samui and Surat Thani in reducing the use of plastic and preventing plastic leakage at a school or an organization’s level. A certified tour guide, her passion about travels makes her a world explorer in her own right.",
+			"image": "/Pooh.jpg"
+		}
+	]
+}

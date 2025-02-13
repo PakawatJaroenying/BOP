@@ -1,21 +1,17 @@
 "use client";
 
 import { Menu, Waves } from "lucide-react";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import LanguageToggle from "./LanguageToggle";
-import { dictionary } from "@/lib/dictionary";
-import { useLanguage } from "@/context/LanguageProvider";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/src/i18n/routing";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
-	const { language } = useLanguage();
-	const t = useMemo(
-		() => dictionary[language as keyof typeof dictionary],
-		[language, dictionary]
-	);
+	const t = useTranslations();
+	const locale = useLocale();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -33,11 +29,11 @@ export default function Navbar() {
 	}, []);
 
 	const navLinks = [
-		{ href: "about-us", label: t.nav.about },
-		{ href: "projects", label: t.nav.projects },
-		{ href: "#", label: t.nav.getInvolved },
-		{ href: "#", label: t.nav.resources },
-		{ href: "#", label: t.nav.contact },
+		{ href: `/about-us`, label: t("nav.about") },
+		{ href: `/projects`, label: t("nav.projects") },
+		{ href: `/#`, label: t("nav.getInvolved") },
+		{ href: `/#`, label: t("nav.resources") },
+		{ href: `/#`, label: t("nav.contact") },
 	];
 
 	return (
@@ -106,14 +102,14 @@ export default function Navbar() {
 							>
 								<div className="flex flex-col gap-4 mt-8">
 									{navLinks.map((link) => (
-										<a
+										<Link
 											key={link.label}
 											href={link.href}
 											className="text-lg font-medium hover:text-blue-600 transition-colors"
 											onClick={() => setIsOpen(false)}
 										>
 											{link.label}
-										</a>
+										</Link>
 									))}
 								</div>
 							</SheetContent>
