@@ -79,7 +79,7 @@ async function Page({ params }: { params: { locale: string } }) {
 									<h2 className="text-3xl font-bold text-gray-900 headline">
 										{project.name}
 									</h2>
-									<div className="prose prose-lg text-gray-600 body text-justify">
+									<div className="prose prose-xl  w-full  text-gray-600 body text-justify">
 										{project.description.split("\n").map((paragraph, i) => (
 											<p key={i}>{paragraph.trim()}</p>
 										))}

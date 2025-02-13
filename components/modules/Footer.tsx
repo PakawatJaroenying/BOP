@@ -9,7 +9,7 @@ function Footer() {
 
 	return (
 		<footer className="bg-blue-900 text-white py-12">
-			<div className="max-w-7xl mx-auto px-4">
+			<div className="container mx-auto">
 				<div className="grid md:grid-cols-4 gap-8">
 					<div>
 						<h3 className="text-xl font-bold mb-4">

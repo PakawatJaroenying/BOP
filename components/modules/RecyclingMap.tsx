@@ -5,7 +5,7 @@ function RecyclingMap() {
 	const t = useTranslations();
 	return (
 		<section className="py-20 bg-teal-50">
-			<div className="max-w-7xl mx-auto px-4">
+			<div className="container mx-auto">
 				<h2 className="text-4xl font-bold text-center mb-16 text-blue-900 headline">
 					{t("map.title")}
 				</h2>
