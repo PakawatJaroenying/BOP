@@ -2,7 +2,7 @@
 import { X } from "lucide-react";
 import Image from "next/image";
 import { useEffect } from "react";
-import { TeamMember } from "./data";
+import { TeamMember } from "./page";
 
 interface ModalProps {
 	member: TeamMember;

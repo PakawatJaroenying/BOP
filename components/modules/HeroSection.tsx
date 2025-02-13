@@ -25,9 +25,9 @@ export default function HeroSection() {
 				<h1 className="text-5xl md:text-7xl font-extrabold text-white body animate-fadeIn">
 					{t("hero.title")}
 				</h1>
-				<p className="text-xl md:text-2xl text-gray-300 mt-6 body animate-fadeIn">
+				<h2 className="text-xl md:text-2xl text-gray-300 mt-6 body animate-fadeIn">
 					{t("hero.subtitle")}
-				</p>
+				</h2>
 				<Button className="body mt-6 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 text-lg font-semibold shadow-lg">
 					{t("hero.cta")} <ArrowRight className="ml-2" />
 				</Button>

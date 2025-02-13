@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import React from "react";
@@ -14,7 +14,7 @@ function VolunteerRegistration() {
 					{t("volunteer.title")}
 				</h2>
 				<p className="text-xl mb-8 body">{t("volunteer.description")}</p>
-				<div className="flex flex-col sm:flex-row gap-4 justify-center">
+				<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 					<input
 						type="email"
 						placeholder={t("volunteer.emailPlaceholder")}
@@ -24,7 +24,7 @@ function VolunteerRegistration() {
 					/>
 					<Button
 						size="lg"
-						className="bg-teal-600 hover:bg-teal-700"
+						className="bg-teal-600 hover:bg-teal-700 "
 					>
 						{t("volunteer.register")}
 					</Button>
