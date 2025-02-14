@@ -1,4 +1,3 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, IBM_Plex_Sans_Thai } from "next/font/google";
 import CustomFont from "next/font/local";
@@ -6,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import Navbar from "@/components/modules/Navbar";
 import Footer from "@/components/modules/Footer";
 import { getMessages } from "next-intl/server";
+import "./globals.css";
 
 const helvetica = CustomFont({
 	src: [
