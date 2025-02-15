@@ -7,6 +7,7 @@ import LanguageToggle from "./LanguageToggle";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/routing";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // Variants สำหรับ Navbar (Fade-in เมื่อโหลดหน้าเว็บ)
 const navVariants = {
@@ -48,11 +49,11 @@ export default function Navbar() {
 	}, []);
 
 	const navLinks = [
+		{ href: `/`, label: t("nav.home") },
 		{ href: `/about-us`, label: t("nav.about") },
 		{ href: `/projects`, label: t("nav.projects") },
-		{ href: `/#`, label: t("nav.getInvolved") },
-		{ href: `/#`, label: t("nav.resources") },
-		{ href: `/#`, label: t("nav.contact") },
+		{ href: `/resource`, label: t("nav.resources") },
+		{ href: `/contact`, label: t("nav.contact") },
 	];
 
 	return (
@@ -71,12 +72,21 @@ export default function Navbar() {
 						initial={{ opacity: 0, y: -10 }}
 						animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
 					>
-						<Link href="/" className="flex items-center headline">
-							<Waves
+						<Link
+							href="/"
+							className="flex items-center headline"
+						>
+							<Image
+								src={"/logoCompany.png"}
+								alt="BOP"
+								width={50}
+								height={50}
+							/>
+							{/* <Waves
 								className={`h-8 w-8 transition-colors duration-500 ${
 									scrolled ? "text-black" : "text-white"
 								}`}
-							/>
+							/> */}
 							<span
 								className={`ml-2 font-bold text-xl transition-colors duration-500 ${
 									scrolled ? "text-black" : "text-white"
@@ -115,7 +125,10 @@ export default function Navbar() {
 					{/* Mobile Navigation */}
 					<div className="md:hidden flex items-center gap-4">
 						<LanguageToggle />
-						<Sheet open={isOpen} onOpenChange={setIsOpen}>
+						<Sheet
+							open={isOpen}
+							onOpenChange={setIsOpen}
+						>
 							<SheetTrigger asChild>
 								<button
 									className={`p-2 transition-colors duration-500 ${

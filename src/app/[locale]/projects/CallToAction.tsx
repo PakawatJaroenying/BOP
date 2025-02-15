@@ -4,6 +4,7 @@ import React from "react";
 import { Waves } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { useRouter } from "@/src/i18n/routing";
 
 // Variants สำหรับ Section (Fade-in + เลื่อนขึ้น)
 const sectionVariants = {
@@ -25,6 +26,7 @@ const textVariants = {
 
 const CallToAction = () => {
 	const t = useTranslations();
+	const router = useRouter();
 
 	return (
 		<motion.div
@@ -68,6 +70,9 @@ const CallToAction = () => {
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.95 }}
 					className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors"
+					onClick={()=>{
+						router.push("/contact");
+					}}
 				>
 					{t("project.ctaBtn")}
 				</motion.button>

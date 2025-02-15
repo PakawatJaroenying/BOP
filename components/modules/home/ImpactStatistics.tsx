@@ -53,7 +53,7 @@ export default function ImpactStatistics() {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: true, amount: 0.2 }} // แสดงเมื่อ Scroll ลงมาประมาณ 20%
-			className="py-20 bg-gradient-to-b from-blue-50 to-white"
+			className="py-5 lg:py-20 bg-gradient-to-b from-blue-50 to-white px-4"
 		>
 			<div className="container mx-auto">
 				<motion.h2

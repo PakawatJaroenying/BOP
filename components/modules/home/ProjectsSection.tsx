@@ -54,14 +54,14 @@ const ProjectsSection = () => {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: true, amount: 0.2 }}
-			className="py-20 bg-white"
+			className="py-5 lg:py-20 bg-white"
 		>
 			<div className="container mx-auto">
 				<motion.h2
 					initial={{ opacity: 0, y: -20 }}
 					whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
 					viewport={{ once: true }}
-					className="text-4xl font-bold text-center mb-16 text-blue-900 headline"
+					className="text-4xl font-bold text-center mb-4 lg:mb-16 text-blue-900 headline"
 				>
 					{t("project.ourProjects")}
 				</motion.h2>

@@ -1,5 +1,6 @@
 {
 	"nav": {
+		"home": "Home",
 		"about": "About",
 		"projects": "Projects",
 		"getInvolved": "Get Involved",
@@ -8,7 +9,7 @@
 	},
 	"hero": {
 		"title": "Protect Our Oceans Together",
-		"subtitle": "For a better world, free from marine plastic waste",
+		"subtitle": "Innovating Sustainability",
 		"cta": "Join Us Now"
 	},
 	"impact": {
@@ -44,7 +45,7 @@
 		"title": "Become a Volunteer",
 		"description": "Be part of protecting our oceans",
 		"emailPlaceholder": "Your email",
-		"register": "Register"
+		"register": "Contact Us"
 	},
 	"footer": {
 		"about": {
@@ -53,9 +54,11 @@
 		},
 		"quickLinks": {
 			"title": "Quick Links",
-			"projects": "Projects",
-			"volunteer": "Volunteer",
-			"map": "Map"
+			"Home": "Home",
+			"About": "About",
+			"Projects": "Projects",
+			"Resources": "Resources",
+			"Contact": "Volunteer"
 		},
 		"contact": "Contact",
 		"share": {
@@ -98,7 +101,7 @@
 		],
 		"cta": "Join Our Mission",
 		"ctaDescription": "Together, we can make a difference in protecting our oceans and creating a sustainable future for generations to come.",
-		"ctaBtn": "Get Involved"
+		"ctaBtn": "ติดต่อเรา"
 	},
 	"teamMembers": [
 		{
@@ -136,5 +139,28 @@
 			"description": "Yada or Pooh has an extensive background in education and is passionate about teaching the young (and the older!) about environmental issues through different approaches ranging from behavior changes to raising awareness about natural conservation and ecotourism. She tirelessly works with students, teachers and educators or trainers at local government-run schools and private sectors in Koh Samui and Surat Thani in reducing the use of plastic and preventing plastic leakage at a school or an organization’s level. A certified tour guide, her passion about travels makes her a world explorer in her own right.",
 			"image": "/Pooh.jpg"
 		}
-	]
+	],
+	"resources": {
+		"title": "Resources",
+		"subtitle": "Discover guides, tools, and resources to help protect our oceans",
+		"undp": {
+		  "title": "Join the UNDP ABIC Waste Station Initiative! 🌍♻️",
+		  "description": "This guideline helps hotels and businesses set up and manage waste stations, aligning with sustainable practices to reduce waste, promote recycling, and support a circular economy. Start making a positive impact today!",
+		  "downloadButton": "Guideline for Hotels/Businesses to Join the UNDP ABIC Waste Station Initiative"
+		}
+	},
+	"contact": {
+		"title": "Contact Us",
+		"subtitle": "We're here to help and answer any questions",
+		"address": {
+		  "title": "Address"
+		},
+		"email": {
+		  "title": "Email"
+		},
+		"phone": {
+		  "title": "Phone",
+		  "subtitle": "Project Lead"
+		}
+	  }
 }

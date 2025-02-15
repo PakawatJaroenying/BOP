@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import React from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "@/src/i18n/routing";
 
 // Variants สำหรับ Section (Fade-in เมื่อ Scroll ถึง)
 const sectionVariants = {
@@ -26,6 +27,7 @@ const formVariants = {
 function VolunteerRegistration() {
 	const t = useTranslations();
 	const [email, setEmail] = React.useState("");
+	const router = useRouter();
 
 	return (
 		<motion.section
@@ -66,17 +68,17 @@ function VolunteerRegistration() {
 					viewport={{ once: true }}
 					className="flex flex-col sm:flex-row gap-4 justify-center items-center"
 				>
-					<input
-						type="email"
-						placeholder={t("volunteer.emailPlaceholder")}
-						className="px-6 py-3 rounded-lg text-gray-900"
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-					/>
-
-					{/* ปุ่มสมัคร */}
-					<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-						<Button size="lg" className="bg-teal-600 hover:bg-teal-700">
+					<motion.div
+						whileHover={{ scale: 1.05 }}
+						whileTap={{ scale: 0.95 }}
+					>
+						<Button
+							size="lg"
+							className="bg-teal-600 hover:bg-teal-700"
+							onClick={()=>{
+								router.push("/contact");
+							}}
+						>
 							{t("volunteer.register")}
 						</Button>
 					</motion.div>

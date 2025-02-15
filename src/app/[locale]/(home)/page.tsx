@@ -6,6 +6,7 @@ import ImpactStatistics from "@/components/modules/home/ImpactStatistics";
 import RecyclingMap from "@/components/modules/home/RecyclingMap";
 import VolunteerRegistration from "@/components/modules/home/VolunteerRegistration";
 import ProjectsSection from "@/components/modules/home/ProjectsSection";
+import SocialMedia from "@/components/modules/home/SocialMedia";
 
 export const generateStaticParams = async () => {
 	return [{ locale: "en" }, { locale: "th" }];
@@ -18,6 +19,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
 			<ImpactStatistics />
 			<ProjectsSection />
 			<RecyclingMap />
+			<SocialMedia/>
 			<VolunteerRegistration />
 		</main>
 	);
