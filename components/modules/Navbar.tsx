@@ -1,21 +1,21 @@
 "use client";
 
-import { Menu, Waves } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import LanguageToggle from "./LanguageToggle";
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/src/i18n/routing";
+import { Link, usePathname } from "@/src/i18n/routing";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Variants สำหรับ Navbar (Fade-in เมื่อโหลดหน้าเว็บ)
+// Variants สำหรับ Navbar
 const navVariants = {
 	hidden: { opacity: 0, y: -20 },
 	show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-// Variants สำหรับ Nav Links (Fade-in ทีละตัว)
+// Variants สำหรับ Nav Links
 const linkVariants = {
 	hidden: { opacity: 0, y: 10 },
 	show: (index: number) => ({
@@ -25,7 +25,7 @@ const linkVariants = {
 	}),
 };
 
-// Variants สำหรับ Mobile Menu (เลื่อนจากขวาเข้ามา)
+// Variants สำหรับ Mobile Menu
 const mobileMenuVariants = {
 	hidden: { opacity: 0, x: 50 },
 	show: { opacity: 1, x: 0, transition: { duration: 0.4 } },
@@ -36,6 +36,7 @@ export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const t = useTranslations();
 	const locale = useLocale();
+	const pathname = usePathname(); // ✅ ใช้ usePathname() เพื่อดึง path ปัจจุบัน
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -53,6 +54,7 @@ export default function Navbar() {
 		{ href: `/about-us`, label: t("nav.about") },
 		{ href: `/projects`, label: t("nav.projects") },
 		{ href: `/resource`, label: t("nav.resources") },
+		{ href: `/gallery`, label: t("nav.gallery") },
 		{ href: `/contact`, label: t("nav.contact") },
 	];
 
@@ -82,11 +84,6 @@ export default function Navbar() {
 								width={50}
 								height={50}
 							/>
-							{/* <Waves
-								className={`h-8 w-8 transition-colors duration-500 ${
-									scrolled ? "text-black" : "text-white"
-								}`}
-							/> */}
 							<span
 								className={`ml-2 font-bold text-xl transition-colors duration-500 ${
 									scrolled ? "text-black" : "text-white"
@@ -99,26 +96,32 @@ export default function Navbar() {
 
 					{/* Desktop Navigation */}
 					<motion.div className="hidden md:flex items-center space-x-8">
-						{navLinks.map((link, index) => (
-							<motion.div
-								key={link.label}
-								variants={linkVariants}
-								initial="hidden"
-								animate="show"
-								custom={index}
-							>
-								<Link
-									href={link.href}
-									className={`transition-colors duration-500 ${
-										scrolled
-											? "text-black hover:text-blue-600"
-											: "text-white hover:text-blue-200"
-									}`}
+						{navLinks.map((link, index) => {
+							const isActive = pathname === link.href; // ✅ เช็คว่าเป็นลิงก์ปัจจุบันหรือไม่
+
+							return (
+								<motion.div
+									key={link.label}
+									variants={linkVariants}
+									initial="hidden"
+									animate="show"
+									custom={index}
 								>
-									{link.label}
-								</Link>
-							</motion.div>
-						))}
+									<Link
+										href={link.href}
+										className={`transition-colors duration-500 ${
+											isActive
+												? "text-blue-600 font-semibold border-b-2 border-blue-600" // ✅ Active Link
+												: scrolled
+												? "text-black hover:text-blue-600"
+												: "text-white hover:text-blue-200"
+										}`}
+									>
+										{link.label}
+									</Link>
+								</motion.div>
+							);
+						})}
 						<LanguageToggle />
 					</motion.div>
 
@@ -148,16 +151,24 @@ export default function Navbar() {
 									animate="show"
 									className="flex flex-col gap-4 mt-8"
 								>
-									{navLinks.map((link) => (
-										<Link
-											key={link.label}
-											href={link.href}
-											className="text-lg font-medium hover:text-blue-600 transition-colors"
-											onClick={() => setIsOpen(false)}
-										>
-											{link.label}
-										</Link>
-									))}
+									{navLinks.map((link) => {
+										const isActive = pathname === link.href;
+
+										return (
+											<Link
+												key={link.label}
+												href={link.href}
+												className={`text-lg font-medium transition-colors ${
+													isActive
+														? "text-blue-600 font-semibold border-b-2 border-blue-600"
+														: "hover:text-blue-600"
+												}`}
+												onClick={() => setIsOpen(false)}
+											>
+												{link.label}
+											</Link>
+										);
+									})}
 								</motion.div>
 							</SheetContent>
 						</Sheet>

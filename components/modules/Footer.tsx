@@ -49,7 +49,7 @@ function Footer() {
 						viewport={{ once: true }}
 						custom={0}
 					>
-						<div className="flex items-center gap-2 mb-4">
+						<div className="flex items-center gap-2 mb-4 justify-center">
 							<Info className="w-5 h-5" />
 							<h3 className="text-xl font-bold">{t("about.title")}</h3>
 							<Image
@@ -59,8 +59,18 @@ function Footer() {
 								height={30}
 							/>
 						</div>
-
-						<p className="text-blue-200">{t("about.description")}</p>
+						<div className="text-center mb-4">
+							<h2 className="text-md font-bold text-white mb-2">
+								Blue Ocean Plastic Recycling CO., LTD.
+							</h2>
+							<p className="text-sm text-teal-600 font-semibold tracking-wide">
+								INNOVATING SUSTAINABILITY
+							</p>
+							<p className="text-blue-200 text-sm mt-2">
+								Transforming waste into opportunity through ethical recycling,
+								sustainability, and circular economy solutions. ♻🌍
+							</p>
+						</div>
 					</motion.div>
 
 					{/* Quick Links */}
@@ -71,7 +81,7 @@ function Footer() {
 						viewport={{ once: true }}
 						custom={1}
 					>
-						<div className="flex items-center gap-2 mb-4">
+						<div className="flex items-center gap-2 mb-4 justify-center">
 							<Link className="w-5 h-5" />
 							<h3 className="text-xl font-bold">{t("quickLinks.title")}</h3>
 						</div>
@@ -88,14 +98,21 @@ function Footer() {
 									link: "/resource",
 								},
 								{
+									name: "Gallery",
+									link: "/gallery",
+								},
+								{
 									name: "Contact",
 									link: "/contact",
 								},
 							].map((link, i) => (
-								<li key={i}>
+								<li
+									key={i}
+									className="text-center"
+								>
 									<LinkNext
 										href={link.link}
-										className="text-blue-200 hover:text-white transition duration-200"
+										className="text-blue-200 hover:text-white transition duration-200  "
 									>
 										{t(`quickLinks.${link.name}`)}
 									</LinkNext>
@@ -112,7 +129,7 @@ function Footer() {
 						viewport={{ once: true }}
 						custom={2}
 					>
-						<div className="flex items-center gap-2 mb-4">
+						<div className="flex items-center gap-2 mb-4 justify-center	">
 							<Phone className="w-5 h-5" />
 							<h3 className="text-xl font-bold">{t("contact")}</h3>
 						</div>
@@ -135,7 +152,7 @@ function Footer() {
 										href={platform.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center gap-2 text-blue-200 hover:text-white transition duration-200"
+										className="flex items-center gap-2 text-blue-200 hover:text-white transition duration-200 justify-center"
 									>
 										{platform.icon} {platform.name}
 									</a>

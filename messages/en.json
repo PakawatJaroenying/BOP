@@ -5,7 +5,8 @@
 		"projects": "Projects",
 		"getInvolved": "Get Involved",
 		"resources": "Resources",
-		"contact": "Contact"
+		"contact": "Contact",
+		"gallery": "Gallery"
 	},
 	"hero": {
 		"title": "Protect Our Oceans Together",
@@ -58,6 +59,7 @@
 			"About": "About",
 			"Projects": "Projects",
 			"Resources": "Resources",
+			"Gallery": "Gallery",
 			"Contact": "Contact"
 		},
 		"contact": "Contact",
@@ -144,23 +146,27 @@
 		"title": "Resources",
 		"subtitle": "Discover guides, tools, and resources to help protect our oceans",
 		"undp": {
-		  "title": "Join the UNDP ABIC Waste Station Initiative! 🌍♻️",
-		  "description": "This guideline helps hotels and businesses set up and manage waste stations, aligning with sustainable practices to reduce waste, promote recycling, and support a circular economy. Start making a positive impact today!",
-		  "downloadButton": "Guideline for Hotels/Businesses to Join the UNDP ABIC Waste Station Initiative"
+			"title": "Join the UNDP ABIC Waste Station Initiative! 🌍♻️",
+			"description": "This guideline helps hotels and businesses set up and manage waste stations, aligning with sustainable practices to reduce waste, promote recycling, and support a circular economy. Start making a positive impact today!",
+			"downloadButton": "Guideline for Hotels/Businesses to Join the UNDP ABIC Waste Station Initiative"
 		}
 	},
 	"contact": {
 		"title": "Contact Us",
 		"subtitle": "We're here to help and answer any questions",
 		"address": {
-		  "title": "Address"
+			"title": "Address"
 		},
 		"email": {
-		  "title": "Email"
+			"title": "Email"
 		},
 		"phone": {
-		  "title": "Phone",
-		  "subtitle": "Project Lead"
+			"title": "Phone",
+			"subtitle": "Project Lead"
 		}
-	  }
+	},
+	"gallery": {
+		"title": "Gallery",
+		"subtitle": "Explore our projects and initiatives"
+	}
 }

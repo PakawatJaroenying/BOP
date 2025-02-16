@@ -29,13 +29,13 @@ function ContentSection() {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5 }}
 						/>
-
 						<h2 className="text-3xl font-bold text-blue-900 mb-2">
 							Blue Ocean Plastic Recycling CO., LTD.
 						</h2>
 						<p className="text-lg text-teal-600 font-semibold tracking-wide">
 							INNOVATING SUSTAINABILITY
 						</p>
+						
 					</div>
 
 					<div className="space-y-8">
