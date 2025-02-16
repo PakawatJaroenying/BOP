@@ -13,6 +13,7 @@ import {
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Link as LinkNext } from "@/src/i18n/routing";
+import Image from "next/image";
 const footerVariants = {
 	hidden: { opacity: 0 },
 	show: { opacity: 1, transition: { duration: 1 } },
@@ -39,7 +40,7 @@ function Footer() {
 			className="bg-blue-900 text-white py-12 px-4 md:px-0"
 		>
 			<div className="container mx-auto">
-				<div className="grid md:grid-cols-3 gap-8   pt-8">
+				<div className="grid md:grid-cols-3 gap-8   pt-8 ">
 					{/* About */}
 					<motion.div
 						variants={columnVariants}
@@ -51,7 +52,14 @@ function Footer() {
 						<div className="flex items-center gap-2 mb-4">
 							<Info className="w-5 h-5" />
 							<h3 className="text-xl font-bold">{t("about.title")}</h3>
+							<Image
+								src={"/logo-removebg-preview.png"}
+								alt="BOP"
+								width={30}
+								height={30}
+							/>
 						</div>
+
 						<p className="text-blue-200">{t("about.description")}</p>
 					</motion.div>
 

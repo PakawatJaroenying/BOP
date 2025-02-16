@@ -109,7 +109,7 @@ const ProjectsSection = () => {
 								</Swiper>
 							</motion.div>
 
-							<p className="text-gray-700 mt-4 line-clamp-5 text-justify body">
+							<p className="text-gray-700 mt-4 line-clamp-5 text-justify prose prose-sm  md:prose-lg">
 								{project.description}
 							</p>
 

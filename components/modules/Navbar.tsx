@@ -77,7 +77,7 @@ export default function Navbar() {
 							className="flex items-center headline"
 						>
 							<Image
-								src={"/logoCompany.png"}
+								src={"/logo-removebg-preview.png"}
 								alt="BOP"
 								width={50}
 								height={50}

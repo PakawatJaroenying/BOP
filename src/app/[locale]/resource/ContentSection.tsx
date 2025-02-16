@@ -26,7 +26,7 @@ function ContentSection() {
 				{t("resources.title")}
 			</motion.h1>
 
-			<Card className="p-8 bg-gradient-to-br from-blue-50 to-teal-50 w-fit max-w-3xl">
+			<Card className="p-8 bg-gradient-to-br from-blue-50 to-teal-50 w-fit max-w-xl">
 				<div className="relative  overflow-hidden mb-6 rounded-md shadow-md w-full h-52  md:h-80 mx-auto">
 					<Image
 						fill

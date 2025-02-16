@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/src/i18n/routing";
 
 // Variants สำหรับ Fade-in แต่ละองค์ประกอบ
 const fadeInUp = (delay = 0) => ({
@@ -13,6 +14,7 @@ const fadeInUp = (delay = 0) => ({
 
 export default function HeroSection() {
 	const t = useTranslations();
+	const router = useRouter()
 	return (
 		<motion.section
 			initial="initial"
@@ -46,7 +48,7 @@ export default function HeroSection() {
 				className="relative z-10 max-w-3xl mx-auto px-4 prose prose-sm md:prose-xl prose-invert prose-headings:text-white prose-a:text-blue-400"
 			>
 				<motion.h1 variants={fadeInUp(0.3)}>{t("hero.title")}</motion.h1>
-				<motion.h3 variants={fadeInUp(0.6)}>{t("hero.subtitle")}</motion.h3>
+				<motion.h3   variants={fadeInUp(0.6)}>{t("hero.subtitle")}</motion.h3>
 
 				{/* Button มี Motion & Hover Effect */}
 				<motion.div variants={fadeInUp(0.9)}>
@@ -54,7 +56,11 @@ export default function HeroSection() {
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 					>
-						<Button className="mt-5 lg:mt-10 text-sm md:text-lg bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 shadow-lg">
+						<Button className="mt-5 lg:mt-10 text-sm md:text-lg bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 shadow-lg"
+							onClick={()=>{
+								router.push("/contact")
+							}}
+						>
 							{t("hero.cta")} <ArrowRight className="ml-2" />
 						</Button>
 					</motion.div>

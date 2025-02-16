@@ -55,7 +55,7 @@ export default function MissionStatement() {
 						initial="hidden"
 						whileInView="show"
 						viewport={{ once: true }}
-						className=" text-gray-600 text-justify prose prose-lg mx-auto"
+						className=" text-gray-600 text-justify   prose prose-sm  lg:prose-lg mx-auto"
 					>
 						{t("about.companyHistory")}
 					</motion.article>

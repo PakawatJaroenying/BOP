@@ -30,7 +30,7 @@ function RecyclingMap() {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: true, amount: 0.2 }}
-			className="py-20 bg-teal-50"
+			className="py-5 md:py-20 bg-teal-50"
 		>
 			<div className="container mx-auto">
 				{/* หัวข้อ */}
@@ -39,7 +39,7 @@ function RecyclingMap() {
 					initial="hidden"
 					whileInView="show"
 					viewport={{ once: true }}
-					className="text-4xl font-bold text-center mb-16 text-blue-900 headline"
+					className="text-4xl font-bold text-center mb-6 md:mb-16 text-blue-900 headline"
 				>
 					{t("map.title")}
 				</motion.h2>
