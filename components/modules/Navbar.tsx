@@ -111,7 +111,7 @@ export default function Navbar() {
 										href={link.href}
 										className={`transition-colors duration-500 ${
 											isActive
-												? "text-blue-600 font-semibold border-b-2 border-blue-600" // ✅ Active Link
+												? "text-blue-200 font-semibold border-b-2 border-blue-200" // ✅ Active Link
 												: scrolled
 												? "text-black hover:text-blue-600"
 												: "text-white hover:text-blue-200"
