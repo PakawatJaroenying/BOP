@@ -14,9 +14,9 @@ function SocialMedia() {
 			{/* Facebook Embed */}
 			<div className="w-full flex  justify-center">
 				<iframe
+					src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D122094676353056905%26set%3Dpcb.122094676455056905&width=550&show_text=true&height=748&appId"
 					width="550"
 					height="660"
-					src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FThesustainabilityjourneysamui%2Fposts%2Fpfbid02GGLCGFNNfxwpwkE43BSp9sDgPio49bGYMDv3JGNc3c1dAG6noT77Dds3TKAMsAj2l&show_text=true"
 					style={{ border: "none", overflow: "hidden" }}
 					scrolling="no"
 					frameBorder="0"

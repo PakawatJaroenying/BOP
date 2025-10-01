@@ -138,7 +138,7 @@ function Footer() {
 								{
 									name: "Facebook",
 									icon: <Facebook className="w-4 h-4 inline" />,
-									link: "https://www.facebook.com/Thesustainabilityjourneysamui",
+									link: "https://www.facebook.com/people/BOP-Blue-Ocean-Plastic-Recycling/61581707156596/",
 								},
 
 								{

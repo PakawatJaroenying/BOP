@@ -102,7 +102,7 @@ function ContentSection() {
 								</h3>
 
 								<a
-									href="https://www.facebook.com/Thesustainabilityjourneysamui"
+									href="https://www.facebook.com/people/BOP-Blue-Ocean-Plastic-Recycling/61581707156596/"
 									className="text-blue-600 hover:text-blue-700"
 								>
 									Facebook
