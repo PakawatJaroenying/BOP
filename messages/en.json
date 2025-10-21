@@ -83,13 +83,13 @@
 			{
 				"images": ["/about/1-Empowering.jpg", "/about/2-Empowering.jpg"],
 				"alt": ["Empowering Collectors 1", "Empowering Collectors 2"],
-				"textKey": "การยกระดับแรงงานนอกระบบ",
+				"textKey": "Empowering Collectors and Protecting Rights: Semi-formalization of the informal sector",
 				"credit": null
 			},
 			{
 				"images": ["/about/2-1.jpeg", "/about/2-2.jpeg"],
 				"alt": ["Empowering Collectors 1", "Empowering Collectors 2"],
-				"textKey": "การเชื่อมโยงพลาสติกรีไซเคิลกับตลาดระดับโลก",
+				"textKey": "Connecting Plastics to Global Premium Markets",
 				"credit": "Credit photo from Tide Ocean Material"
 			}
 		]
