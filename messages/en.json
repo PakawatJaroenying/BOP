@@ -9,8 +9,8 @@
 		"gallery": "Gallery"
 	},
 	"hero": {
-		"title": "Protect Our Oceans Together",
-		"subtitle": "Innovating Sustainability",
+		"title": "From Street to Supply Chain",
+		"subtitle": "Unlocking Recycled Plastic Growth by investing in the informal sector",
 		"cta": "Join Us Now"
 	},
 	"impact": {
@@ -71,13 +71,47 @@
 	"about": {
 		"ourTeam": "Our Team",
 		"ourMission": "Our Mission",
-		"mission": "BOP and Ranong Recycle RRE Koh Samui Team is active in the Thai Gulf area—and now based in Koh Samui.",
-		"companyHistory": "Blue Ocean Plastic Recycling is transforming waste into opportunity. We work hand-in-hand with informal and formal waste collectors, ensuring fair, transparent, and traceable recycling practices. From first- and second-mile waste pickers to community waste banks, we help create ethical supply chains that meet global standards. As Asia, especially in Thailand and SEA, transitions to Extended Producer Responsibility (EPR) schemes and Europe enforces stricter grievance mechanisms for recycled plastics, we help businesses and communities adapt. We don’t just verify recycled plastic—we empower responsible sourcing, collaborating with partners like Tide Ocean to support brands committed to sustainability. Starting as a nonprofit, we have grown into an impact-driven enterprise, strengthening partnerships through grants, research, and innovation. In the UNDP-funded ABIC Program, we work with the tourism sector to design waste management models that benefit corporations, brands, and local communities. Our collaboration with Second Muse explores eco-bricks as a low- value waste solution for Thai Gulf islands, connecting community waste banks to circular economy models. By working together, we create real change. From Waste to Worth—Driven by Human Values.♻🌍"
+		"mission": [
+			"Empower informal workers through incentives and human rights training",
+			"Reduce plastic pollution and protect oceans",
+			"Serve as a trusted bridge between local recyclers and global brands — enabling confidence through transparent, verified, and inclusive supply chains."
+		],
+		"companyHistory": "Blue Ocean Plastic Recycling is transforming waste into opportunity. We work hand-in-hand with informal and formal waste collectors, ensuring fair, transparent, and traceable recycling practices. From first- and second-mile waste pickers to community waste banks, we help create ethical supply chains that meet global standards. As Asia, especially in Thailand and SEA, transitions to Extended Producer Responsibility (EPR) schemes and Europe enforces stricter grievance mechanisms for recycled plastics, we help businesses and communities adapt. We don’t just verify recycled plastic—we empower responsible sourcing, collaborating with partners like Tide Ocean to support brands committed to sustainability. Starting as a nonprofit, we have grown into an impact-driven enterprise, strengthening partnerships through grants, research, and innovation. In the UNDP-funded ABIC Program, we work with the tourism sector to design waste management models that benefit corporations, brands, and local communities. Our collaboration with Second Muse explores eco-bricks as a low- value waste solution for Thai Gulf islands, connecting community waste banks to circular economy models. By working together, we create real change. From Waste to Worth—Driven by Human Values.♻🌍",
+		"teamIntro": "we turn plastic waste into opportunity. Working with informal collectors, recyclers, and communities, we build a transparent, traceable, and fair supply chain from waste collection to industry.",
+		"teamExperience": "Experience in building responsible sourcing recycled plastic framework. Our team is active in the Thai Gulf area — now based in Samui, Surat Thani, and Ranong.",
+		"aboutPage": [
+			{
+				"images": ["/about/1-Empowering.jpg", "/about/2-Empowering.jpg"],
+				"alt": ["Empowering Collectors 1", "Empowering Collectors 2"],
+				"textKey": "การยกระดับแรงงานนอกระบบ",
+				"credit": null
+			},
+			{
+				"images": ["/about/2-1.jpeg", "/about/2-2.jpeg"],
+				"alt": ["Empowering Collectors 1", "Empowering Collectors 2"],
+				"textKey": "การเชื่อมโยงพลาสติกรีไซเคิลกับตลาดระดับโลก",
+				"credit": "Credit photo from Tide Ocean Material"
+			}
+		]
 	},
 	"project": {
 		"ourProjects": "Our Projects",
 		"innovative": "Innovative solutions for a cleaner ocean and sustainable future",
 		"projects": [
+			{
+				"name": "2025 Accelerator+ Participant | Thailand Chapter",
+				"description": "At BOP, we’re not plastic traders — we’re ethical supply chain enablers. We strengthen the recycling industry by providing human rights due diligence, training, and a digital grievance reporting app for informal waste collectors. Our low-barrier, multilingual, GEDSI-aligned tools ensure visibility, traceability, and inclusive participation. Aligned with international standards like CSDDD and LkSG, we help businesses integrate ESG practices confidently while unlocking ethical sourcing, compliance, and market access. With deep field connections and insights into premium markets, plastic credits, and EPR schemes, we bridge human dignity with business performance. Together, we ensure no one is left behind in building a cleaner, fairer, and more sustainable recycling system.",
+				"credit": ["Tide Ocean Material"],
+				"images": [
+					"/projects/Project3-ThailandChapter/1.png",
+					"/projects/Project3-ThailandChapter/2.JPG",
+					"/projects/Project3-ThailandChapter/3.JPG",
+					"/projects/Project3-ThailandChapter/4.JPG",
+					"/projects/Project3-ThailandChapter/5.JPG",
+					"/projects/Project3-ThailandChapter/6.JPG",
+					"/projects/Project3-ThailandChapter/7.JPG"
+				]
+			},
 			{
 				"name": "Plastic Smart Cities by the WWF",
 				"description": "Blue Ocean Plastic Recycling (BOP) is proud to collaborate with Ranong Recycle Social Enterprise (RRE) in enhancing local waste management infrastructure in Surat Thani and Koh Samui. As part of these efforts, BOP and RRE work together to expand the network of community waste banks and improve Material Recovery Facilities (MRFs) to process plastic waste more efficiently. These initiatives contribute to the broader goals of the Plastic Smart Cities initiative by WWF, a global program that supports scalable waste management solutions in urban and coastal areas. While BOP is not a direct partner of WWF, our work with RRE aligns with the initiative’s mission to reduce plastic leakage into nature through innovation, education, and community engagement. Through this collaboration, we also support educational programs focused on plastic reduction in schools, empowering the next generation with knowledge and tools to drive sustainable change.",

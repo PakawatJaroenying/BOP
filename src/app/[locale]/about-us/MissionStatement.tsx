@@ -55,9 +55,13 @@ export default function MissionStatement() {
 						initial="hidden"
 						whileInView="show"
 						viewport={{ once: true }}
-						className=" text-gray-600 text-justify   prose prose-sm  lg:prose-lg mx-auto"
+						className="text-gray-600 text-left prose prose-sm lg:prose-lg mx-auto"
 					>
-						{t("about.companyHistory")}
+						<ul className="list-disc pl-6 space-y-2">
+							{t.raw("about.mission").map((item, index) => (
+								<li key={index}>{item}</li>
+							))}
+						</ul>
 					</motion.article>
 				</div>
 			</div>

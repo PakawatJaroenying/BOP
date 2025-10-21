@@ -33,7 +33,7 @@ function ContentSection() {
 							Blue Ocean Plastic Recycling CO., LTD.
 						</h2>
 						<p className="text-lg text-teal-600 font-semibold tracking-wide">
-							INNOVATING SUSTAINABILITY
+							From Street to Supply Chain
 						</p>
 						
 					</div>

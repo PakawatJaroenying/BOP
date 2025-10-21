@@ -64,11 +64,11 @@ function Footer() {
 								Blue Ocean Plastic Recycling CO., LTD.
 							</h2>
 							<p className="text-sm text-teal-600 font-semibold tracking-wide">
-								INNOVATING SUSTAINABILITY
+								From Street to Supply Chain
 							</p>
 							<p className="text-blue-200 text-sm mt-2">
-								Transforming waste into opportunity through ethical recycling,
-								sustainability, and circular economy solutions. ♻🌍
+								Unlocking Recycled Plastic Growth by investing in the informal
+								sector
 							</p>
 						</div>
 					</motion.div>

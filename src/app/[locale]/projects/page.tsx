@@ -17,6 +17,7 @@ export interface Project {
 	name: string;
 	description: string;
 	images: string[];
+	credit?: string[];
 }
 
 async function Page() {

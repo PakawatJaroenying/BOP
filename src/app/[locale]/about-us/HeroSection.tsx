@@ -51,10 +51,30 @@ export default function HeroSection() {
 							hidden: { opacity: 0, y: 20 },
 							show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 						}}
-						className="text-blue-200"
+						className="text-blue-200 mb-6"
 					>
 						{t("about.mission")}
 					</motion.h4>
+
+					{/* Introduction Text */}
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, delay: 0.2 }}
+						className="text-lg md:text-xl font-medium mb-8 text-white/90"
+					>
+						{t("about.teamIntro")}
+					</motion.p>
+
+					{/* Team Experience */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, delay: 0.4 }}
+						className="bg-white/10 rounded-lg p-4 mt-2 shadow-md border border-white/20 text-white"
+					>
+						{t("about.teamExperience")}
+					</motion.div>
 				</motion.div>
 			</div>
 		</motion.div>

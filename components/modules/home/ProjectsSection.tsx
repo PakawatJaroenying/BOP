@@ -96,8 +96,13 @@ const ProjectsSection = () => {
 									{project.images.map((image, i) => (
 										<SwiperSlide
 											key={i}
-											className="relative w-full h-96"
+											className="relative w-full h-96 "
 										>
+											{project?.credit?.[i] && (
+												<div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded z-10">
+													Credit: {project.credit[i]}
+												</div>
+											)}
 											<Image
 												src={image}
 												alt={`Project ${index + 1} Image ${i + 1}`}
