@@ -58,7 +58,7 @@ export default function MissionStatement() {
 						className="text-gray-600 text-left prose prose-sm lg:prose-lg mx-auto"
 					>
 						<ul className="list-disc pl-6 space-y-2">
-							{t.raw("about.mission").map((item, index) => (
+							{t.raw("about.mission").map((item: any, index: number) => (
 								<li key={index}>{item}</li>
 							))}
 						</ul>

@@ -46,15 +46,14 @@ export default function HeroSection() {
 					>
 						{t("about.ourTeam")}
 					</motion.h1>
-					<motion.h4
+					{/* <motion.h4
 						variants={{
 							hidden: { opacity: 0, y: 20 },
 							show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 						}}
 						className="text-blue-200 mb-6"
 					>
-						{t("about.mission")}
-					</motion.h4>
+					</motion.h4> */}
 
 					{/* Introduction Text */}
 					<motion.p

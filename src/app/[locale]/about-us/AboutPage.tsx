@@ -6,10 +6,10 @@ function AboutPage() {
 	const aboutPage = t.raw("about.aboutPage");
 	return (
 		<div className="container mx-auto px-4 py-12 flex flex-col gap-8">
-			{aboutPage.map((section, idx) => (
+			{aboutPage.map((section: any, idx: number) => (
 				<div key={idx}>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-						{section.images.map((img, i) => (
+						{section.images.map((img: any, i: number) => (
 							<div
 								key={img}
 								className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center"
