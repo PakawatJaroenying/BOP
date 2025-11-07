@@ -64,10 +64,10 @@ function ContentSection() {
 									{t("contact.email.title")}
 								</h3>
 								<a
-									href="mailto:bop.thailand2021@gmail.com"
+									href="mailto:blueoceanplasticrecycling@gmail.com"
 									className="text-blue-600 hover:text-blue-700"
 								>
-									bop.thailand2021@gmail.com
+									blueoceanplasticrecycling@gmail.com
 								</a>
 							</div>
 						</div>
